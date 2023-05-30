@@ -54,7 +54,7 @@ def val_aug(img, mask):
 
 # 修改img_suffix='.tif'
 class VaihingenDataset(Dataset):
-    def __init__(self, data_root='autodl-tmp/vaihingen/test', mode='val', img_dir='images_512', mask_dir='masks_512',
+    def __init__(self, data_root='dataset/vaihingen/test', mode='val', img_dir='images_512', mask_dir='masks_512',
                  img_suffix='.png', mask_suffix='.png', transform=val_aug, mosaic_ratio=0.0,
                  img_size=ORIGIN_IMG_SIZE):
         self.data_root = data_root
